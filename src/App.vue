@@ -18,10 +18,6 @@
         </nav>
       </div>
     </section>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/quiz">Quiz</router-link>
-    </div>-->
     <router-view />
   </div>
 </template>
@@ -45,7 +41,4 @@ export default {
   font-family: "Pacifico", cursive;
   padding: 0.5em;
 }
-/* #nav {
-  margin: auto 30%;
-} */
 </style>
