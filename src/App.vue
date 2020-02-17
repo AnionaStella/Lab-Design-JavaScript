@@ -1,32 +1,51 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <section class="hero is-dark">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <h1 class="title">Quizmakr</h1>
+                <h2 class="subtitle">Generate a Dozenquiz for quiz night</h2>
+                <div id="nav">
+                  <router-link to="/">Home</router-link>|
+                  <router-link to="/quiz">Quiz</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link>|
+      <router-link to="/quiz">Quiz</router-link>
+    </div>-->
+    <router-view />
   </div>
 </template>
 
+<script>
+export default {
+  name: "App",
+  components: {}
+};
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: cadetblue;
+  color: darkslategrey;
+  padding-bottom: 5vw;
+  margin: auto;
 }
-
-#nav {
-  padding: 30px;
+.title {
+  font-size: 5em;
+  font-family: "Pacifico", cursive;
+  padding: 0.5em;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* #nav {
+  margin: auto 30%;
+} */
 </style>

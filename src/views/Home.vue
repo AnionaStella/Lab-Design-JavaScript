@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home container has-text-centered">
+    <div>
+      <h1>Welcome to Quizmakr</h1>
+      <p>Here you can generate quizzes for pubnight with quick true or false answers.</p>
+      <p>Time to start quizzing!</p>
+      <br />
+      <div class="buttons are-medium is-centered">
+        <button class="button">
+          <router-link to="/quiz">Start quizzing</router-link>
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home",
+  components: {}
+};
 </script>
+<style scoped>
+#app {
+  background-color: cadetblue;
+  color: darkslategrey;
+  padding-bottom: 5vw;
+  margin: auto;
+}
+h1 {
+  font-size: 3rem;
+}
+</style>
