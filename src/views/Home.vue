@@ -16,15 +16,14 @@
 
 <script>
 export default {
-  name: "Home",
-  components: {}
+  name: "Home"
 };
 </script>
 <style scoped>
-#app {
+.home {
   background-color: cadetblue;
   color: darkslategrey;
-  padding-bottom: 5vw;
+  padding-bottom: 35%;
   margin: auto;
 }
 h1 {

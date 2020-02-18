@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div>{{ number }}</div>
+    <div>
+      <p>Question nr {{ number }}</p>
+    </div>
     <br />
     <div v-html="question.question"></div>
   </div>

@@ -33,7 +33,7 @@ export default {
 #app {
   background-color: cadetblue;
   color: darkslategrey;
-  padding-bottom: 5vw;
+  padding-bottom: 35%;
   margin: auto;
 }
 .title {
