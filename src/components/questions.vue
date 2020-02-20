@@ -1,7 +1,8 @@
 
 <template>
   <div>
-    <Name :enterName="nameEntered" />
+    <Name />
+    <!-- :enterName="nameEntered" -->
     <div class="columns is-multiline is-centered">
       <div
         class="column is-one-quarter"
