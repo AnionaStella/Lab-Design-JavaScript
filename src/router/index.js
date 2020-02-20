@@ -15,6 +15,7 @@ const routes = [{
     name: 'Quiz',
     component: Quiz
   }
+  // path parameter - /:hello?
 ]
 
 const router = new VueRouter({

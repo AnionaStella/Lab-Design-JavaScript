@@ -1,6 +1,7 @@
 
 <template>
   <div>
+    <Name :enterName="nameEntered" />
     <div class="columns is-multiline is-centered">
       <div
         class="column is-one-quarter"
@@ -21,19 +22,23 @@
 <script>
 import QuestionCard from "../components/questionCard.vue";
 import Answer from "../components/answer.vue";
+import Name from "../components/name.vue";
 
 export default {
   name: "Questions",
   components: {
     QuestionCard,
-    Answer
+    Answer,
+    Name
   },
   methods: {
     clickMe() {
       fetch("https://opentdb.com/api.php?amount=12&type=boolean")
         .then(response => response.json())
         .then(result => {
-          this.$store.state.questions = result.results;
+          // this.$store.state.questions = result.results;
+          this.$store.commit("setQuestions", result.results);
+          // Skapa mutation
         });
     }
   }

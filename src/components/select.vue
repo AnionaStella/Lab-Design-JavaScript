@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     created() {
-      fetch("https://opentdb.com/api.php?amount=12") // kan använda : &difficulty=easy, &category=11, amount=10 tex:https://opentdb.com/api.php?amount=2&category2&difficulty=easy
+      fetch(`https://opentdb.com/api.php?{PARAMETER ex amount=12}`) // kan använda : &difficulty=easy, &category=11, amount=10 tex:https://opentdb.com/api.php?amount=2&category2&difficulty=easy
         .then(response => response.json())
         .then(result => {
           this.questions = result.results;

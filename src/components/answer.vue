@@ -5,6 +5,7 @@
     <input type="radio" v-model="booleanButton" value="incorrect" />
     {{ question.incorrect_answers[0] }}
     <p>What you have chosen is {{ booleanButton }}</p>
+    <!-- $store.state. -->
   </div>
 </template>
 
@@ -16,7 +17,7 @@ export default {
       booleanButton: ""
     };
   },
-  props: ["question"]
+  props: { question: Object }
 };
 </script>
 

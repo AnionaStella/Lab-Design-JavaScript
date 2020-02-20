@@ -6,9 +6,17 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     questions: [],
+    nameText: ""
     // results: []
   },
-  mutations: {},
+  mutations: {
+    setQuestions(state, questions) {
+      state.questions = questions
+    },
+    setnameText(state, nameText) {
+      state.nameText = nameText
+    }
+  },
   actions: {},
   modules: {}
 })
