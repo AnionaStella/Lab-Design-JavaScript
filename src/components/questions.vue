@@ -2,7 +2,7 @@
 <template>
   <div>
     <Name />
-    <!-- :enterName="nameEntered" -->
+
     <div class="columns is-multiline is-centered">
       <div
         class="column is-one-quarter"
@@ -37,9 +37,7 @@ export default {
       fetch("https://opentdb.com/api.php?amount=12&type=boolean")
         .then(response => response.json())
         .then(result => {
-          // this.$store.state.questions = result.results;
           this.$store.commit("setQuestions", result.results);
-          // Skapa mutation
         });
     }
   }

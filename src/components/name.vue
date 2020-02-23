@@ -3,7 +3,7 @@
     <label for="welcomeName">Enter your name:</label>
     <input type="text" v-model="nameText" id="welcomeName" />
     <h1>Welcome {{ nameText }}</h1>
-    <!-- GÖR CUSTOM EVENT FÖR ATT SKICKA NAMN TILL QUESTIONS SIDA -->
+    <!-- GÖR CUSTOM EVENT FÖR ATT SKICKA NAMN TILL QUESTIONS SIDA ? -->
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
         this.$store.commit("setnameText", nameText);
       }
     }
-  },
-  props: { enterName: String }
+  }
+  // props: { enterName: String }
 };
 </script>
